@@ -1,0 +1,7 @@
+getpass
+pynput
+logging
+subprocess
+os
+smtplib
+datetime
